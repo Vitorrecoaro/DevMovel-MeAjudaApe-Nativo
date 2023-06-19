@@ -20,9 +20,41 @@
 
 Aplicativo para criação de um contato entre proprietários de imóveis e inquilinos que estão em busca destes imóveis, como também fazer com que pessoas que são inquilinos de determinado imóvel, ofertar uma vaga no imóvel atual.
 
+## Definição de entidades para o aplicativo:
+
+### Imóvel:
+
+-   Tamanho ($m^2$).
+-   Quantidade de cômodos.
+-   Localização.
+-   Fotos do imóvel.
+-   Observações.
+-   Descrição.
+
+### Acordos de imóvel:
+
+-   Tipo: ou contrato com o proprietário, ou compartilhamento entre usuários.
+-   Valor.
+-   Tempo de vigência.
+-   Imóvel.
+-   O usuário responsável.
+-   O usuário inquilino.
+-   Estado do imóvel.
+
+### Usuário:
+
+-   Nome completo.
+-   Email.
+-   CPF.
+-   Senha.
+-   Foto.
+-   Telefone para contato.
+-   Imóveis.
+-   Acordos.
+
 ## Algumas ideias de telas:
 
-### Catálogo:
+### Catálogo (Vitor Recoaro):
 
 Apresentação dos apartamentos disponíveis feito a partir de uma lista de cartões, com detalhes, como:
 
@@ -30,17 +62,35 @@ Apresentação dos apartamentos disponíveis feito a partir de uma lista de cart
 -   Detalhes do imóvel para locação.
 -   Localização do imóvel.
 
-### Detalhes do imóvel:
+### Detalhes do imóvel (Thiago):
 
 Apresentação de mais detalhes do imóvel quando o usuário clica no cartão, com os detalhes:
 
 -
 
-### Chat de contato:
-
-### Perfil do usuário:
+### Perfil do usuário (Bruno Medri):
 
 Apresentação do perfil do usuário, com detalhes do imóvel que está fazendo contato, por exemplo, se o usuário publicou mais de uma proposta de locação, mostrar uma lista dos imóveis que esse usuário publicou.
+
+### Lista de chats recentes:
+
+-
+
+### Chat entre usuários:
+
+-
+
+### Formulário de cadastro de imóvel (Bruno Leandro):
+
+-
+
+### Formulário de cadastro de usuário (Bruno Leandro):
+
+-
+
+### Formulário de login:
+
+-
 
 ## Links para documentação:
 
