@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">MeAjudaApe</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Imóveis</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="add">Novo Imóvel</string>
+    <string name="chat">Mensagens</string>
+    <string name="profile">Perfil</string>
+    <string name="searchNavBar">Busca</string>
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeNavBar"
+        android:title="@string/title_home"
+        android:icon="@drawable/outline_home"
+        app:showAsAction="ifRoom"
+    />
+    <item
+        android:id="@+id/addNavBar"
+        android:title="@string/add"
+        android:icon="@drawable/baseline_add_circle_outline"
+        app:showAsAction="ifRoom"
+    />
+    <item
+        android:id="@+id/emptyMenu"
+        android:enabled="false"
+        android:title=" "
+    />
+    <item
+        android:id="@+id/chatNavBar"
+        android:title="@string/chat"
+        android:icon="@drawable/outline_chat"
+        app:showAsAction="ifRoom"
+    />
+    <item
+        android:id="@+id/profileNavBar"
+        android:title="@string/profile"
+        android:icon="@drawable/outline_person"
+        app:showAsAction="ifRoom"
+    />
+</menu>
