@@ -8,4 +8,10 @@
     <string name="chat">Mensagens</string>
     <string name="profile">Perfil</string>
     <string name="searchNavBar">Busca</string>
+    <string name="hint_name">CEP</string>
+    <string name="hint_cep">CEP</string>
+    <string name="hint_Lagradouro">Lagradouro</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="hint_complemento">Complemento</string>
+    <string name="hint_numero">Número</string>
 </resources>
