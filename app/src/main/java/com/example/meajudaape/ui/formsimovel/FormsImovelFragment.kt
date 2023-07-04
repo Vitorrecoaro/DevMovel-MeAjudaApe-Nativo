@@ -10,12 +10,7 @@ import com.example.meajudaape.R
 
 class FormsImovelFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = FormsImovelFragment()
-    }
-
     private lateinit var viewModel: FormsImovelViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,4 +18,18 @@ class FormsImovelFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_forms_imovel, container, false)
     }
 
+    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupButton()
+    }
+
+    private fun setupButton() {
+        binding.btnSend.setOnClickListener {sendDataToServer()}
+    }
+
+    private fun sendDataToServer() {
+        val dataStr =
+    }
+    */
 }
