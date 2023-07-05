@@ -10,6 +10,7 @@
     tools:context=".ui.formsimovel2.FormsImovel2Fragment">
 
 
+    <!-- Tipo de alocação -->
     <TextView
         android:id="@+id/tvType"
         android:layout_width="wrap_content"
@@ -42,6 +43,65 @@
         android:text="@string/republica">
     </CheckBox>
 
+    <!-- Qtd Quartos -->
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quartos"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/quartosDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Qtd Suites -->
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/suites"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/suitesDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Qtd Banheiros -->
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/banheiros"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/banheirosDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Valor -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutValor"
         android:layout_width="match_parent"
@@ -58,6 +118,8 @@
             android:inputType="numberDecimal"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Condomínio -->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutCondominio"
@@ -76,6 +138,8 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- IPTU -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutIptu"
         android:layout_width="match_parent"
@@ -90,6 +154,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_descricao"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:helperText="Fale mais sobre o Imóvel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
