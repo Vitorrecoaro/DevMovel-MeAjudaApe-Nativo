@@ -18,7 +18,7 @@ data class Imovel(
     val caracteristicas: List<String>,
     val whatsapp: String,
     val codigoImovel: String
-)
+){
 
     //val gson = Gson()
     //val json = gson.toJson(imovel)
