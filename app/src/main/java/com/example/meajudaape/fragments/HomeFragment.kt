@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
     1,
     "Rua dos bobos numero 0",
     "")
-    var imoveis: List<Imovel> = listOf(imovel)
+    var imoveis: List<Imovel> = listOf(imovel, imovel, imovel)
     private var _binding : FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
