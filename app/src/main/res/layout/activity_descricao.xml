@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,43 +11,46 @@
         android:id="@+id/foto_ap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-48dp"
+        android:layout_marginTop="-48sp"
         android:src="@drawable/foto_ap"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <LinearLayout
         android:id="@+id/aluguel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-40dp"
+        android:layout_marginTop="-40sp"
         app:layout_constraintTop_toBottomOf="@id/foto_ap">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_horizontal"
             android:text="Aluguel"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Condomínio"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="R$300,00"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -58,30 +60,30 @@
         app:layout_constraintTop_toBottomOf="@id/aluguel">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_horizontal"
             android:text="R$700,00"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="IPTU"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="R$150,00"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -101,9 +103,9 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8sp"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -142,9 +144,9 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8sp"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -182,9 +184,9 @@
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8sp"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -223,9 +225,9 @@
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8sp"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -264,10 +266,10 @@
         android:id="@+id/endereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="8sp"
         android:gravity="center"
         android:text="Endereço: Padre Teixeira, 1465, Centro, São Carlos"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/grid" />
 
@@ -277,13 +279,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/endereco"
-        android:padding="5dp">
+        android:padding="5sp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Descrição"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
 
@@ -291,7 +293,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, turpis vel porta tincidunt, leo nibh bibendum libero, sed vulputate mauris mauris et mauris. Nullam lobortis, lectus sed convallis laoreet, quam lectus fermentum mi, a tristique arcu velit efficitur mauris." android:textSize="15dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, turpis vel porta tincidunt, leo nibh bibendum libero, sed vulputate mauris mauris et mauris. Nullam lobortis, lectus sed convallis laoreet, quam lectus fermentum mi, a tristique arcu velit efficitur mauris." android:textSize="15sp"
             android:textStyle="normal"/>
 
     </LinearLayout>
@@ -302,14 +304,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/descricao"
-        android:padding="5dp">
+        android:padding="5sp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="Características do imóvel"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
         <LinearLayout
@@ -318,20 +320,20 @@
             app:layout_constraintTop_toBottomOf="@+id/caracteristicas">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Armário embutido"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
 
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Área de serviço"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
         </LinearLayout>
 
@@ -341,20 +343,20 @@
             app:layout_constraintTop_toBottomOf="@+id/caracteristicas">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Armário de cozinha"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
 
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Varanda"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
         </LinearLayout>
     </LinearLayout>
@@ -363,7 +365,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/contato"
-        android:padding="5dp"
+        android:padding="5sp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/caracteristicas">
 
@@ -371,7 +373,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contato do anunciante"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
         <LinearLayout
@@ -381,19 +383,19 @@
             >
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Whatsapp: (12) 91234-5678"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Código do imóvel: 12345"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="normal"/>
 
         </LinearLayout>
@@ -411,21 +413,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="Contato"
+            android:layout_marginTop="10sp"
              />
     </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/localizacao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/contato"
-        android:text="Localização do Imóvel"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:gravity="center" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
