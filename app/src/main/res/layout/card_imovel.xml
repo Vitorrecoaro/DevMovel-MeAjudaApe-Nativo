@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:elevation="7dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp">
+                <ImageView
+                    android:id="@+id/imovelImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/apartamento"/>
+
+                <ImageButton
+                    android:id="@+id/favIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:contentDescription="Favorite icon"
+                    android:padding="4dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/star_outline_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/imovelTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Título Imóvel"
+                    android:textAppearance="@style/titleCard"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.62sp"
+                    android:gravity="top"
+                    android:layout_marginBottom="12sp"/>
+                <TextView
+                    android:id="@+id/imovelDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Lorem Ipsum lalala, lilili"
+                    android:textAppearance="@style/descCard"
+                    android:lineSpacingExtra="4sp"
+                    android:translationY="-1.8sp"
+                    android:gravity="top"
+                    android:layout_marginBottom="4sp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Aluguel ícone"
+                            android:src="@drawable/home_outline_24" />
+                        <TextView
+                            android:id="@+id/imovelAluguel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/valorCard"
+                            android:text="R$ 400"
+                            android:layout_marginLeft="6sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Condominio ícone"
+                            android:src="@drawable/neighborhood_outline_24"
+                            android:layout_marginLeft="6sp"/>
+                        <TextView
+                            android:id="@+id/imovelCondominio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/valorCard"
+                            android:text="R$ 400"
+                            android:layout_marginLeft="6sp"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
