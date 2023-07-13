@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     private lateinit var bottomAppBar: BottomNavigationView
     private var homeFragment = HomeFragment()
-    private var blankFragment = BlankFragment()
     private var profileFragment = ProfileFragment()
     private var formsImovel = FormsImovelFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
