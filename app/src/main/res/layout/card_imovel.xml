@@ -10,7 +10,8 @@
         app:cardCornerRadius="15dp"
         android:layout_margin="10dp"
         android:clickable="true"
-        app:elevation="7dp">
+        app:elevation="7dp"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,19 +26,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/apartamento"/>
+                    android:src="@drawable/apartamento"
+                    android:contentDescription="@string/image_apartamento" />
 
                 <ImageButton
                     android:id="@+id/favIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:background="@drawable/round_button"
                     android:backgroundTint="@color/white"
                     android:clickable="true"
-                    android:contentDescription="Favorite icon"
+                    android:contentDescription="@string/favorite_icon"
+                    android:focusable="true"
                     android:padding="4dp"
-                    android:background="@drawable/round_button"
                     android:src="@drawable/star_outline_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +55,7 @@
                     android:id="@+id/imovelTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Título Imóvel"
+                    android:text="@string/titulo_Imovel"
                     android:textAppearance="@style/titleCard"
                     android:lineSpacingExtra="1sp"
                     android:translationY="-0.62sp"
@@ -62,7 +65,7 @@
                     android:id="@+id/imovelDescricao"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Lorem Ipsum lalala, lilili"
+                    android:text="@string/exemple_text"
                     android:textAppearance="@style/descCard"
                     android:lineSpacingExtra="4sp"
                     android:translationY="-1.8sp"
@@ -84,28 +87,28 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:contentDescription="Aluguel ícone"
+                            android:contentDescription="@string/rent_icon"
                             android:src="@drawable/home_outline_24" />
                         <TextView
                             android:id="@+id/imovelAluguel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="@style/valorCard"
-                            android:text="R$ 400"
-                            android:layout_marginLeft="6sp"/>
+                            android:text="@string/value_exemple"
+                            android:layout_marginStart="6sp"/>
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:contentDescription="Condominio ícone"
+                            android:contentDescription="@string/condominio_icone"
                             android:src="@drawable/neighborhood_outline_24"
-                            android:layout_marginLeft="6sp"/>
+                            android:layout_marginStart="6sp"/>
                         <TextView
                             android:id="@+id/imovelCondominio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="@style/valorCard"
-                            android:text="R$ 400"
-                            android:layout_marginLeft="6sp"/>
+                            android:text="@string/value_exemple"
+                            android:layout_marginStart="6sp"/>
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>

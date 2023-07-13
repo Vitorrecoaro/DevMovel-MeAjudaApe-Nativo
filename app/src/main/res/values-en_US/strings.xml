@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MeAjudaApe</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Properties</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add">New Property</string>
+    <string name="chat">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="searchNavBar">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_Imovel">Property title</string>
+    <string name="exemple_text">Lorem Ipsum lalala, lilili</string>
+    <string name="rent_icon">Rent icon</string>
+    <string name="value_exemple">$ 400</string>
+    <string name="condominio_icone">Neighborhood icon</string>
+    <string name="favorite_icon">Favorite icon</string>
+    <string name="perfil">Profile</string>
+    <string name="icone_perfil">Profile icon</string>
+    <string name="user_name">Sanji</string>
+    <string name="conta">Account</string>
+    <string name="meus_anuncios">My adverts</string>
+    <string name="seguranca">Security</string>
+    <string name="ajuda">Help</string>
+    <string name="configuraces">Settings</string>
+    <string name="sair">Exit</string>
+    <string name="image_apartamento">Property image</string>
+</resources>
