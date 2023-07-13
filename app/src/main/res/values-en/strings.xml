@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">MeAjudaApe</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Properties</string>
+    <string name="title_home">Buildings</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="add">New Property</string>
+    <string name="add">New building</string>
     <string name="chat">Messages</string>
     <string name="profile">Profile</string>
     <string name="searchNavBar">Search</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="titulo_Imovel">Property title</string>
+    <string name="titulo_Imovel">Apartment title</string>
     <string name="exemple_text">Lorem Ipsum lalala, lilili</string>
     <string name="rent_icon">Rent icon</string>
     <string name="value_exemple">$ 400</string>
@@ -25,5 +25,5 @@
     <string name="ajuda">Help</string>
     <string name="configuraces">Settings</string>
     <string name="sair">Exit</string>
-    <string name="image_apartamento">Property image</string>
+    <string name="image_apartamento">Building image</string>
 </resources>
