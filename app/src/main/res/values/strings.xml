@@ -8,6 +8,34 @@
     <string name="chat">Mensagens</string>
     <string name="profile">Perfil</string>
     <string name="searchNavBar">Busca</string>
+
+    <!--Formulário Imovel 1-->
+    <string name="hint_cep">CEP</string>
+    <string name="hint_Lagradouro">Lagradouro</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="hint_complemento">Complemento</string>
+    <string name="hint_numero">Número</string>
+    <string name="continuar">CONTINUAR</string>
+
+    <!--Formulário Imovel 2-->
+    <string name="casa">Casa</string>
+    <string name="apartamento">Apartamento</string>
+    <string name="republica">Quarto em República</string>
+    <string name="typeText">Tipo de alocação:</string>
+    <string name="hint_valor">Valor</string>
+    <string name="hint_condominio">Condomínio</string>
+    <string name="hint_iptu">IPTU</string>
+    <string name="quartos">Quantidade de Quartos</string>
+    <string name="suites">Quantidade de Suites</string>
+    <string name="banheiros">Quantidade de Banheiros</string>
+    <string name="hint_descricao">Descrição</string>
+    <string-array name="quantidade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titulo_Imovel">Título Imóvel</string>
@@ -26,4 +54,5 @@
     <string name="configuraces">Configurações</string>
     <string name="sair">Sair</string>
     <string name="image_apartamento">Image apartamento</string>
+    <string name="prontoButton">PRONTO</string>
 </resources>

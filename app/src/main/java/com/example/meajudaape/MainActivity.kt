@@ -9,6 +9,7 @@ import com.example.meajudaape.fragments.HomeFragment
 import com.example.meajudaape.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
+import com.example.meajudaape.fragments.FormsImovelFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var homeFragment = HomeFragment()
     private var blankFragment = BlankFragment()
     private var profileFragment = ProfileFragment()
+    private var formsImovel = FormsImovelFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -33,8 +35,9 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(binding.fragmentContainerView.id, homeFragment).commit()
             return true
         }
-        if (item.itemId == R.id.addNavBar){
-            supportFragmentManager.beginTransaction().replace(binding.fragmentContainerView.id, blankFragment ).commit()
+        if (item.itemId == R.id.addNavBar) {
+            supportFragmentManager.beginTransaction()
+                .replace(binding.fragmentContainerView.id, formsImovel).commit()
             return true
         }
         if (item.itemId == R.id.profileNavBar){
