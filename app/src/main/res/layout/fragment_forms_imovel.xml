@@ -35,16 +35,16 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutLagradouro"
+        android:id="@+id/textInputLayoutLogradouro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_Lagradouro"
+        android:hint="@string/hint_Logradouro"
         android:layout_marginBottom="16dp"
         app:endIconMode="clear_text"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextLagradouro"
+            android:id="@+id/editTextLogradouro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>

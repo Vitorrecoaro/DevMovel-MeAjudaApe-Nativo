@@ -11,7 +11,7 @@
 
     <!--Formulário Imovel 1-->
     <string name="hint_cep">CEP</string>
-    <string name="hint_Lagradouro">Lagradouro</string>
+    <string name="hint_Logradouro">Logradouro</string>
     <string name="hint_bairro">Bairro</string>
     <string name="hint_complemento">Complemento</string>
     <string name="hint_numero">Número</string>
