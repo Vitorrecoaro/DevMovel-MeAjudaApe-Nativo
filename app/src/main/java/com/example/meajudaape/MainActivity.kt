@@ -2,12 +2,11 @@ package com.example.meajudaape
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
-import androidx.fragment.app.FragmentManager
 import com.example.meajudaape.databinding.ActivityMainBinding
 import com.example.meajudaape.fragments.BlankFragment
 import com.example.meajudaape.fragments.HomeFragment
+import com.example.meajudaape.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 
@@ -16,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bottomAppBar: BottomNavigationView
     private var homeFragment = HomeFragment()
     private var blankFragment = BlankFragment()
+    private var profileFragment = ProfileFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         }
         if (item.itemId == R.id.addNavBar){
             supportFragmentManager.beginTransaction().replace(binding.fragmentContainerView.id, blankFragment ).commit()
+            return true
+        }
+        if (item.itemId == R.id.profileNavBar){
+            supportFragmentManager.beginTransaction().replace(binding.fragmentContainerView.id, profileFragment ).commit()
             return true
         }
         return false
