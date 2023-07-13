@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,7 +10,6 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            //android:src="@drawable/botao_voltar"
             android:padding="14dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +58,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_conta"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
@@ -77,7 +75,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_anuncios"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
@@ -94,7 +92,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_seguranca"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
@@ -111,7 +109,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_ajuda"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
@@ -128,7 +126,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_configs"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
@@ -145,7 +143,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:textColor="@color/neutral"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:drawableLeft="@drawable/icone_sair"
                 android:drawableRight="@drawable/icone_seta_direita"
                 android:drawablePadding="10dp"
