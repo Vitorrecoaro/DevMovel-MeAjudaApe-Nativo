@@ -7,7 +7,15 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="16dp"
-    tools:context=".ui.formsimovel.FormsImovelFragment">
+    tools:context=".fragments.FormsImovelFragment">
+
+    <TextView
+        android:id="@+id/tvEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Insira o endereço do imóvel:"
+        android:textSize="16dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutCep"
