@@ -26,4 +26,28 @@
     <string name="configuraces">Settings</string>
     <string name="sair">Exit</string>
     <string name="image_apartamento">Building image</string>
+
+    <!--Formulário Imovel 1-->
+    <string name="hint_cep">CEP</string>
+    <string name="hint_Lagradouro">Street</string>
+    <string name="hint_bairro">Neighborhood</string>
+    <string name="hint_complemento">Complement</string>
+    <string name="hint_numero">Number</string>
+    <string name="continuar">CONTINUE</string>
+
+    <!--Formulário Imovel 2-->
+    <string name="casa">Home</string>
+    <string name="apartamento">Apartment</string>
+    <string name="republica">Room on republic</string>
+    <string name="typeText">Allocation type:</string>
+    <string name="hint_valor">Price</string>
+    <string name="hint_condominio">Neighborhood price</string>
+    <string name="hint_iptu">IPTU</string>
+    <string name="quartos">Rooms quantity</string>
+    <string name="suites">Suite rooms quantity</string>
+    <string name="banheiros">Bathrooms quantity</string>
+    <string name="hint_descricao">Description</string>
+    <string name="prontoButton">REGISTER</string>
+    <string name="hint_Address">Insert building address:</string>
+    <string name="hint_info">Insert info from building:</string>
 </resources>

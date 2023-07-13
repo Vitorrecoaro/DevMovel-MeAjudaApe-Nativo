@@ -13,11 +13,11 @@
         android:icon="@drawable/baseline_add_circle_outline"
         app:showAsAction="ifRoom"
     />
-    <item
-        android:id="@+id/emptyMenu"
-        android:enabled="false"
-        android:title=" "
-    />
+<!--    <item-->
+<!--        android:id="@+id/emptyMenu"-->
+<!--        android:enabled="false"-->
+<!--        android:title=" "-->
+<!--    />-->
     <item
         android:id="@+id/chatNavBar"
         android:title="@string/chat"

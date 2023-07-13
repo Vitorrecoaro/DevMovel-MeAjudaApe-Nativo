@@ -37,13 +37,4 @@
             app:itemTextColor="@color/primary"
             app:menu="@menu/menu_nav_bar" />
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/navigationBarSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary"
-        android:contentDescription="@string/searchNavBar"
-        android:src="@drawable/baseline_search"
-        app:layout_anchor="@id/navigationBar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

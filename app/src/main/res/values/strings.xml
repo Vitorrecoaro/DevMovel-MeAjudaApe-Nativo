@@ -55,4 +55,6 @@
     <string name="sair">Sair</string>
     <string name="image_apartamento">Image apartamento</string>
     <string name="prontoButton">PRONTO</string>
+    <string name="hint_Address">Insira o endereço do imóvel:</string>
+    <string name="hint_info">Insira algumas informações do imóvel:</string>
 </resources>

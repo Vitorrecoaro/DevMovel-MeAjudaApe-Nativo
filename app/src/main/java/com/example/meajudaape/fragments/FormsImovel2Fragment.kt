@@ -9,12 +9,8 @@ import android.widget.ArrayAdapter
 import com.example.meajudaape.MainActivity
 import com.example.meajudaape.R
 import com.example.meajudaape.databinding.FragmentFormsImovel2Binding
-import com.example.meajudaape.ui.formsimovel2.FormsImovel2ViewModel
 
 class FormsImovel2Fragment : Fragment() {
-
-    private lateinit var viewModel: FormsImovel2ViewModel
-
     private var _binding: FragmentFormsImovel2Binding? = null
     private val binding get() = _binding!!
 
