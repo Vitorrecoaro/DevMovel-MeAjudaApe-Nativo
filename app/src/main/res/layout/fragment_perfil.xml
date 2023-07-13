@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            //android:src="@drawable/botao_voltar"
+            android:padding="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:textColor="@color/tertiary"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/icone_perfil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Sanji"
+                android:textColor="@color/tertiary"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Conta"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_conta"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Meus Anúncios"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_anuncios"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Segurança"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_seguranca"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Ajuda"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_ajuda"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Configurações"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_configs"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button"
+                android:text="Sair"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/neutral"
+                android:textAlignment="viewStart"
+                android:drawableLeft="@drawable/icone_sair"
+                android:drawableRight="@drawable/icone_seta_direita"
+                android:drawablePadding="10dp"
+                android:paddingEnd="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
