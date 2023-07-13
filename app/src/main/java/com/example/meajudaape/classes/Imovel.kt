@@ -2,7 +2,6 @@ package com.example.meajudaape.classes
 
 class Imovel(
     var id: Int,
-    var img: Int,
     var nome: String,
     var descricao: String,
     var aluguel: Double,

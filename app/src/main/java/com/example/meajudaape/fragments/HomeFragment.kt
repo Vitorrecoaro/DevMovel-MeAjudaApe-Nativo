@@ -10,20 +10,14 @@ import com.example.meajudaape.R
 import com.example.meajudaape.adapters.ImovelAdapter
 import com.example.meajudaape.classes.Imovel
 import com.example.meajudaape.databinding.FragmentHomeBinding
+import com.example.meajudaape.network.ImoveisApiService
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class HomeFragment : Fragment() {
-    val imovel = Imovel(
-    1,
-    1,
-    "Teste",
-    "Teste 123",
-    450.0,
-    450.0,
-    30.0,
-    1,
-    "Rua dos bobos numero 0",
-    "")
-    var imoveis: List<Imovel> = listOf(imovel, imovel, imovel)
     private var _binding : FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
@@ -37,10 +31,28 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        binding.imoveisRecyclerView.apply{
-            layoutManager = LinearLayoutManager(context)
-            adapter = ImovelAdapter(imoveis)
-        }
+        val retrofit: Retrofit = Retrofit.Builder()
+            .baseUrl("http://my-json-server.typicode.com")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val imovelApi : ImoveisApiService = retrofit.create(ImoveisApiService::class.java)
+
+        val call : Call<List<Imovel>> = imovelApi.getImoveis()
+
+        call.enqueue(object : Callback<List<Imovel>> {
+            override fun onFailure(call: Call<List<Imovel>>, t: Throwable) {
+            }
+
+            override fun onResponse(call: Call<List<Imovel>>, response: Response<List<Imovel>>) {
+                binding.imoveisRecyclerView.apply{
+                    layoutManager = LinearLayoutManager(context)
+                    adapter = ImovelAdapter(response.body()!!)
+                }
+            }
+
+        })
+
         return binding.root
     }
 
@@ -48,4 +60,6 @@ class HomeFragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
+
+
 }

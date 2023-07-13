@@ -2,9 +2,7 @@ package com.example.meajudaape
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
-import androidx.fragment.app.FragmentManager
 import com.example.meajudaape.databinding.ActivityMainBinding
 import com.example.meajudaape.fragments.BlankFragment
 import com.example.meajudaape.fragments.HomeFragment
@@ -12,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding : ActivityMainBinding
     private lateinit var bottomAppBar: BottomNavigationView
     private var homeFragment = HomeFragment()
