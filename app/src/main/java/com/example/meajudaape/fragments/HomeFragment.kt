@@ -1,5 +1,6 @@
 package com.example.meajudaape.fragments
 
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -45,6 +46,7 @@ class HomeFragment : Fragment() {
             }
 
             override fun onResponse(call: Call<List<Imovel>>, response: Response<List<Imovel>>) {
+                binding.progressBar.visibility = View.GONE
                 binding.imoveisRecyclerView.apply{
                     layoutManager = LinearLayoutManager(context)
                     adapter = ImovelAdapter(response.body()!!)
