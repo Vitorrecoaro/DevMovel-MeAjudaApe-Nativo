@@ -29,7 +29,7 @@
 
     <!--Formulário Imovel 1-->
     <string name="hint_cep">CEP</string>
-    <string name="hint_Lagradouro">Street</string>
+    <string name="hint_Logradouro">Street</string>
     <string name="hint_bairro">Neighborhood</string>
     <string name="hint_complemento">Complement</string>
     <string name="hint_numero">Number</string>
