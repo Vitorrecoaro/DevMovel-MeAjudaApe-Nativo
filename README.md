@@ -16,6 +16,10 @@
 
 # Me Ajuda Apê
 
+<center>
+    <img src="assets/logo_me_ajuda_ape.jpg" height=200/>
+</center>
+
 ## Ideia inicial:
 
 Aplicativo para criação de um contato entre proprietários de imóveis e inquilinos que estão em busca destes imóveis, como também fazer com que pessoas que são inquilinos de determinado imóvel, ofertar uma vaga no imóvel atual.
